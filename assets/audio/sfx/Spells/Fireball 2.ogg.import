@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://do6hfty0x2s0y"
+path="res://.godot/imported/Fireball 2.ogg-a58dfecfd54f0a7a2ff9a18ae5f626ec.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Spells/Fireball 2.ogg"
+dest_files=["res://.godot/imported/Fireball 2.ogg-a58dfecfd54f0a7a2ff9a18ae5f626ec.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
