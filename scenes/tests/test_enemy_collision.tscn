@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1i6j7qq7xk54"]
+
+[ext_resource type="PackedScene" uid="uid://cwa2u2xegg4mm" path="res://scenes/objects/Enemy.tscn" id="1_ykk07"]
+[ext_resource type="PackedScene" uid="uid://nj7lobv0joru" path="res://scenes/objects/Walls.tscn" id="2_qpv71"]
+
+[node name="testEnemyCollision" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_ykk07")]
+
+[node name="Walls" parent="." instance=ExtResource("2_qpv71")]

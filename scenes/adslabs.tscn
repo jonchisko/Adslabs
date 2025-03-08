@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8r0drlc0o4kb"]
+
+[ext_resource type="PackedScene" uid="uid://crycnixymx14k" path="res://scenes/objects/Turret.tscn" id="1_h5t1j"]
+
+[node name="Adslabs" type="Node2D"]
+position = Vector2(322, 368)
+
+[node name="Turret" parent="." instance=ExtResource("1_h5t1j")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, -187)
