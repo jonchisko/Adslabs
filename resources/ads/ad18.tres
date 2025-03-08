@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://cxiqp0mpbyoc4"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_hn26c"]
+
+[resource]
+script = ExtResource("1_hn26c")
+Title = "Too Many Grenades?"
+Description = "We got you. The \"Tactical Yeet Shield™\" absorbs all explosions AND insults."

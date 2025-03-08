@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://dym655nlibkj5"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_klkrf"]
+
+[resource]
+script = ExtResource("1_klkrf")
+Title = "NEW Mode: Hardcore Realism!"
+Description = "Description"

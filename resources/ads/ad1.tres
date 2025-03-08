@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://2b2fe2fi57qi"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_a2jjn"]
+
+[resource]
+script = ExtResource("1_a2jjn")
+Title = "The Blacksmiths Hate This One Trick!"
+Description = "Craft legendary weapons with just a rusty dagger and a dream. Click now before the inquisition bans this knowledge!"

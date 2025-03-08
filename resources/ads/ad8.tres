@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://b7bmgmub2d67k"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_wus5f"]
+
+[resource]
+script = ExtResource("1_wus5f")
+Title = "Limited Offer: Buy One Potion, Get a Curse Free!"
+Description = "Healing? Strength? Immortality? Drink at your own risk—side effects may include turning into a frog."

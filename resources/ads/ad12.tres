@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://duilo63j2o8ln"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_5swxu"]
+
+[resource]
+script = ExtResource("1_5swxu")
+Title = "Ever Wondered if You're the Lost Heir?"
+Description = "Take this simple quiz to find out! Results 99% accurate unless you're a peasant."

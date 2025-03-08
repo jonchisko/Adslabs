@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://c8q04gmyr8741"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_kvwxu"]
+
+[resource]
+script = ExtResource("1_kvwxu")
+Title = "Do You Even 360 No-Scope?"
+Description = "Upgrade now and gain +10 style points per unnecessary spin."

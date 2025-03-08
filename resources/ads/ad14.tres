@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://bb61jxj7b8k1o"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_yvlug"]
+
+[resource]
+script = ExtResource("1_yvlug")
+Title = "New Killstreak Available!"
+Description = "15 Kills – Unlock \"Call Mom\" to hear her ask why you’re still gaming at 3 AM."

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://doy7parcywyrg"]
+
+[ext_resource type="PackedScene" uid="uid://4cyoif2m7ttt" path="res://scenes/objects/ads/ad.tscn" id="1_esf6m"]
+
+[node name="AdTestScene" type="CanvasLayer"]
+
+[node name="Ad" parent="." instance=ExtResource("1_esf6m")]
+offset_left = -266.0
+offset_top = -127.0
+offset_right = -3.0
+offset_bottom = 14.0
+
+[node name="Ad2" parent="." instance=ExtResource("1_esf6m")]
+offset_left = 22.0
+offset_top = -169.0
+offset_right = 285.0
+offset_bottom = -28.0
+
+[node name="Ad3" parent="." instance=ExtResource("1_esf6m")]
+offset_left = -89.0
+offset_top = 30.0
+offset_right = 174.0
+offset_bottom = 171.0

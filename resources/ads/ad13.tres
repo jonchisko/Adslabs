@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://r10u05wcujxv"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_oa5sn"]
+
+[resource]
+script = ExtResource("1_oa5sn")
+Title = "Tactical Nuke Incoming!"
+Description = "For a limited time only, call in your OWN! (Some restrictions apply. No refunds.)"
