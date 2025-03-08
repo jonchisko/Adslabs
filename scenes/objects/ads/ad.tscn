@@ -245,6 +245,7 @@ theme_type_variation = &"RedBanner"
 
 [node name="CloseButton" parent="HBoxContainer/PanelCloseContainer" instance=ExtResource("2_62g7f")]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 theme_type_variation = &"IconClose"
 audio_stream = ExtResource("3_lh517")

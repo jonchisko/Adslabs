@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b25irjouaq8bt"]
+
+[ext_resource type="PackedScene" uid="uid://c2jjpxh0mddny" path="res://scenes/objects/ads/ad_holder.tscn" id="1_aw3op"]
+[ext_resource type="Script" path="res://scenes/tests/ui/spawn_zone_test.gd" id="1_ciggh"]
+
+[node name="SpawnZoneTest" type="CanvasLayer"]
+script = ExtResource("1_ciggh")
+
+[node name="AdHolder" parent="." instance=ExtResource("1_aw3op")]
+offset_left = 136.0
+offset_top = 133.0
+offset_right = 136.0
+offset_bottom = -227.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
