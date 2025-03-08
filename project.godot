@@ -14,6 +14,10 @@ config/name="Adslabs"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneTransition="*res://scenes/autoloads/scene_transition/scene_transition.tscn"
+
 [display]
 
 window/size/viewport_width=640
