@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Area2D
 
 @export var enemy_scene: PackedScene
 @export var spawn_interval: float = 2.0
