@@ -8,12 +8,15 @@
 position = Vector2(322, 368)
 
 [node name="Turret" parent="." instance=ExtResource("1_h5t1j")]
+position = Vector2(0, 53)
+scale = Vector2(1, 1.12)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-2, -187)
+zoom = Vector2(1, 0.75)
 
 [node name="Enemy" parent="." instance=ExtResource("2_o3emn")]
-position = Vector2(-86, -338)
+position = Vector2(-42, -343)
 
 [node name="Walls" parent="." instance=ExtResource("3_wkmfb")]
-position = Vector2(-321, -85)
+position = Vector2(-321, -43)
