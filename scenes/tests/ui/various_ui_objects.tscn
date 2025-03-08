@@ -64,3 +64,62 @@ offset_right = 544.0
 offset_bottom = 178.0
 theme_type_variation = &"WideButton"
 text = "CLICK WIDE"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 179.0
+offset_right = 147.0
+offset_bottom = 213.0
+
+[node name="PanelContainer4" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 203.0
+offset_right = 293.0
+offset_bottom = 253.0
+theme_type_variation = &"TitleContainerBlue"
+
+[node name="PanelContainer5" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 208.0
+offset_right = 504.0
+offset_bottom = 276.0
+theme_type_variation = &"TitleContainer"
+
+[node name="PanelContainer6" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 293.0
+offset_right = 324.0
+offset_bottom = 350.0
+theme_type_variation = &"RedBanner"
+
+[node name="IconButton" type="Button" parent="PanelContainer6"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_type_variation = &"IconClose"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 70.0
+offset_right = 115.0
+offset_bottom = 83.0
+text = "TEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 73.0
+offset_right = 392.0
+offset_bottom = 99.0
+theme_type_variation = &"TitleLabel"
+text = "TEST"
+horizontal_alignment = 1
+vertical_alignment = 1
