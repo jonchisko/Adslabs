@@ -7,27 +7,32 @@ signal ad_closed
 
 var is_occupied: bool = false
 
+
+var _current_ad: AdUi
+var _current_dynamic_state: bool
+var _current_dynamic_duration: float
+
 	
-func occupy_holder(ad: AdUi, dynamic: bool, dynamic_duration: int):
+func occupy_holder(ad: AdUi, dynamic: bool, dynamic_duration: float):
 	if self.is_occupied:
 		return
 	
 	self.is_occupied = true
 	
 	self.add_child(ad)
-	ad.global_position = self.global_position
 	ad.ad_closed.connect(self._on_ad_closed)
+	ad.ad_final_size.connect(self._on_setup_location)
 	
-	self._set_position_within_bounds(ad)
-	if dynamic:
-		self._make_dynamic(ad, dynamic_duration)
-	
+	self._current_ad = ad
+	self._current_dynamic_state = dynamic
+	self._current_dynamic_duration = dynamic_duration
+
 	
 func _set_position_within_bounds(ad: AdUi) -> void:
 	self.global_position = self._get_random_point(ad)
 	
 
-func _make_dynamic(ad: AdUi, dynamic_duration: int):
+func _make_dynamic(ad: AdUi, dynamic_duration: float):
 	var number_of_points = randi_range(2, 5)
 	
 	var tween = self.get_tree().create_tween()
@@ -40,6 +45,7 @@ func _make_dynamic(ad: AdUi, dynamic_duration: int):
 
 
 func _get_random_point(ad: AdUi) -> Vector2:
+	print(self.position, self.global_position, ad.position, ad.global_position, ad.size)
 	var area = self.get_viewport_rect().size
 	var ad_dimensions = ad.get_rect().size
 	
@@ -52,3 +58,9 @@ func _get_random_point(ad: AdUi) -> Vector2:
 func _on_ad_closed() -> void:
 	self.is_occupied = false
 	self.ad_closed.emit()
+	
+	
+func _on_setup_location() -> void:
+	self._set_position_within_bounds(self._current_ad)
+	if self._current_dynamic_state:
+		self._make_dynamic(self._current_ad, self._current_dynamic_duration)

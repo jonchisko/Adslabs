@@ -1,0 +1,32 @@
+[gd_scene load_steps=13 format=3 uid="uid://cb7k8hl07qqn2"]
+
+[ext_resource type="PackedScene" uid="uid://cunaxppkg736e" path="res://scenes/managers/ad_manager.tscn" id="1_kak0q"]
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="2_ibpur"]
+[ext_resource type="Resource" uid="uid://2b2fe2fi57qi" path="res://resources/ads/ad1.tres" id="3_igkng"]
+[ext_resource type="Resource" uid="uid://dmp05jyds3ren" path="res://resources/ads/ad2.tres" id="4_vxd22"]
+[ext_resource type="Resource" uid="uid://lahoxe6elbcc" path="res://resources/ads/ad3.tres" id="5_8p6he"]
+[ext_resource type="Resource" uid="uid://b2yvcc5bmjemn" path="res://resources/ads/ad4.tres" id="6_6gbdj"]
+[ext_resource type="Resource" uid="uid://dq046aql1p68f" path="res://resources/ads/ad5.tres" id="7_agrla"]
+[ext_resource type="Resource" uid="uid://8ndeogdja8dc" path="res://resources/ads/ad6.tres" id="8_n27t4"]
+[ext_resource type="Resource" uid="uid://5f5amig0cwqj" path="res://resources/ads/ad7.tres" id="9_3tw3w"]
+[ext_resource type="Resource" uid="uid://b7bmgmub2d67k" path="res://resources/ads/ad8.tres" id="10_2ahll"]
+[ext_resource type="Resource" uid="uid://4ummpvt0gmp1" path="res://resources/ads/ad9.tres" id="11_ausl0"]
+[ext_resource type="Resource" uid="uid://dnxrv0d8fwd81" path="res://resources/ads/ad10.tres" id="12_chcmt"]
+
+[node name="AdManagerTestScene" type="Node2D"]
+
+[node name="AdManager" parent="." node_paths=PackedStringArray("ads_container") instance=ExtResource("1_kak0q")]
+ads_container = NodePath("../CanvasLayer/AdsContainer")
+ads = Array[ExtResource("2_ibpur")]([ExtResource("3_igkng"), ExtResource("4_vxd22"), ExtResource("5_8p6he"), ExtResource("6_6gbdj"), ExtResource("7_agrla"), ExtResource("8_n27t4"), ExtResource("9_3tw3w"), ExtResource("10_2ahll"), ExtResource("11_ausl0"), ExtResource("12_chcmt")])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AdsContainer" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

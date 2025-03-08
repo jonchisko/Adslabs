@@ -18,11 +18,14 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneTransition="*res://scenes/autoloads/scene_transition/scene_transition.tscn"
+GameEvents="*res://scenes/autoloads/game_events.tscn"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
 window/stretch/mode="viewport"
 window/size/mode.release=3
 

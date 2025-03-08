@@ -8,5 +8,5 @@ var ad: PackedScene = preload("res://scenes/objects/ads/ad.tscn")
 
 func _on_timer_timeout() -> void:
 	var instantiated_ad = self.ad.instantiate()
-	self.ad_holder.occupy_holder(instantiated_ad, true, 1)
+	self.ad_holder.occupy_holder(instantiated_ad, true, 0.5)
 	
