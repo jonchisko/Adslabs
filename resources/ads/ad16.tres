@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://kd20p3qtv4bc"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_aenvt"]
+
+[resource]
+script = ExtResource("1_aenvt")
+Title = "“They’re Camping!”"
+Description = "Get the new Anti-Camper Strike Package – includes UAV spam, airstrikes, and rage messages."

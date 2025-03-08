@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://5f5amig0cwqj"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_qnlex"]
+
+[resource]
+script = ExtResource("1_qnlex")
+Title = "Become the Chosen One Today!"
+Description = "Only 99 gold! Prophecy not included. No refunds if you fail."

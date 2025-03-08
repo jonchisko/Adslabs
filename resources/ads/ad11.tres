@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://kca7qemm885a"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_djooh"]
+
+[resource]
+script = ExtResource("1_djooh")
+Title = "Knight Armor Clearance Sale!"
+Description = "Dented? Yes. Bloodstained? Maybe. Cheap? Absolutely."

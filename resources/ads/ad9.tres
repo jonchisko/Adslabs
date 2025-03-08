@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://4ummpvt0gmp1"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_tqmib"]
+
+[resource]
+script = ExtResource("1_tqmib")
+Title = "Undead in Your Area!"
+Description = "Meet single zombies looking for brains! Swipe left before they bite."

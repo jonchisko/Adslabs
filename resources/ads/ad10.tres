@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://dnxrv0d8fwd81"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_cfg4h"]
+
+[resource]
+script = ExtResource("1_cfg4h")
+Title = "Your Kingdom Needs YOU!"
+Description = "Enemies at the gates, famine in the fields, the king needs more tax money. Do your part—donate today!"

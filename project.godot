@@ -15,12 +15,15 @@ run/main_scene="res://scenes/adslabs.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneTransition="*res://scenes/autoloads/scene_transition/scene_transition.tscn"
+
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/stretch/mode="viewport"
-mouse_cursor/custom_image="res://assets/sprites/UI/Pointers/01.png"
 window/size/mode.release=3
 
 [gui]

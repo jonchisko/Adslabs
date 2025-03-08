@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://pd5r35moq0yu"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_c5jm7"]
+
+[resource]
+script = ExtResource("1_c5jm7")
+Title = "Knife Kills Feel Weak?"
+Description = "Try the \"One-Hit Wonder\" Perk – slices enemies AND their dignity in one swing!"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdResource" load_steps=2 format=3 uid="uid://lahoxe6elbcc"]
+
+[ext_resource type="Script" path="res://resources/ads/ad_resource.gd" id="1_ir7ab"]
+
+[resource]
+script = ExtResource("1_ir7ab")
+Title = "Join the King's Army!"
+Description = "Low pay, bad food, constant war. But hey, you get a free sword!* (*Not guaranteed)"
