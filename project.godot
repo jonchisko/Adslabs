@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Adslabs"
-run/main_scene="res://scenes/adslabs.tscn"
+run/main_scene="res://scenes/levels/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SceneTransition="*res://scenes/autoloads/scene_transition/scene_transition.tscn"
 GameEvents="*res://scenes/autoloads/game_events.tscn"
+Music="*res://scenes/autoloads/music.tscn"
 
 [display]
 

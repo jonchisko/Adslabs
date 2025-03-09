@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://buic7ofaexg35"]
+
+[ext_resource type="AudioStream" uid="uid://c7jnweari1hxh" path="res://assets/audio/music/Light Ambience 1.mp3" id="1_8j5tr"]
+
+[node name="Music" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_8j5tr")
+autoplay = true
+bus = &"Music"

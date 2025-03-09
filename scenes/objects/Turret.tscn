@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://crycnixymx14k"]
+[gd_scene load_steps=7 format=3 uid="uid://crycnixymx14k"]
 
 [ext_resource type="Script" path="res://scripts/turret_movement.gd" id="1_f3tj2"]
 [ext_resource type="Texture2D" uid="uid://cqkmj7s6xilj5" path="res://assets/sprites/objects/Tower_Blue.png" id="2_4peyt"]
@@ -9,9 +9,13 @@
 radius = 20.0
 height = 82.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epaf4"]
+size = Vector2(69, 89)
+
 [node name="Turret" type="CharacterBody2D"]
 collision_mask = 4
 script = ExtResource("1_f3tj2")
+SPEED = 20000.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -53)
@@ -27,3 +31,10 @@ stream = ExtResource("3_n1qkr")
 
 [node name="Weapon" parent="." instance=ExtResource("4_jb3nx")]
 position = Vector2(0, -50)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, -45.5)
+shape = SubResource("RectangleShape2D_epaf4")

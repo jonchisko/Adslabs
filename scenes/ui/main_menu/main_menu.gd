@@ -12,4 +12,4 @@ func _on_options_button_pressed() -> void:
 
 
 func _on_play_button_pressed() -> void:
-	SceneTransition.transition_to("res://scenes/levels/game_levels/dummy_level.tscn")
+	SceneTransition.transition_to("res://scenes/levels/game_levels/main_level.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://nn6k4pcyteaj"]
+[gd_scene load_steps=39 format=4 uid="uid://nn6k4pcyteaj"]
 
 [ext_resource type="PackedScene" uid="uid://b0xw0rbt50m60" path="res://scenes/managers/ad_counter.tscn" id="1_2qqig"]
 [ext_resource type="PackedScene" uid="uid://bp4a232dmh8q2" path="res://scenes/managers/pause_manager.tscn" id="1_4f3o1"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://clx1l8wtj2m20" path="res://scenes/managers/enemy_manager.tscn" id="1_ivbdq"]
 [ext_resource type="TileSet" uid="uid://dxnhm6rdg4525" path="res://assets/tileset.tres" id="1_l83rb"]
 [ext_resource type="PackedScene" uid="uid://c1yxblv2ngisb" path="res://scenes/managers/movement_manager.tscn" id="1_lcnk3"]
+[ext_resource type="PackedScene" uid="uid://sjjxdn1xpgir" path="res://scenes/managers/unreal_effect_manager.tscn" id="1_msm38"]
 [ext_resource type="PackedScene" uid="uid://cx06363fvyh25" path="res://scenes/managers/life_manager.tscn" id="1_xnxjl"]
 [ext_resource type="PackedScene" uid="uid://cunaxppkg736e" path="res://scenes/managers/ad_manager.tscn" id="2_y1ayv"]
 [ext_resource type="PackedScene" uid="uid://do25qqybtan55" path="res://scenes/ui/vignette.tscn" id="3_4740y"]
@@ -40,6 +41,10 @@
 
 [node name="MainLevel" type="Node2D"]
 
+[node name="UnrealEffectManager" parent="." instance=ExtResource("1_msm38")]
+threshold_delta = 4.0
+threshold_counter = 10
+
 [node name="AdCounter" parent="." node_paths=PackedStringArray("ad_counter_ui") instance=ExtResource("1_2qqig")]
 ad_counter_ui = NodePath("../CanvasLayer/AdCounterUi")
 
@@ -49,7 +54,6 @@ player = NodePath("../Turret")
 [node name="PauseManager" parent="." instance=ExtResource("1_4f3o1")]
 
 [node name="LifeManager" parent="." node_paths=PackedStringArray("life_ui") instance=ExtResource("1_xnxjl")]
-life = 1
 life_ui = NodePath("../CanvasLayer/LifeUi")
 
 [node name="EndScreenManager" parent="." instance=ExtResource("4_g61uc")]

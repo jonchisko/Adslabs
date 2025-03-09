@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://sjjxdn1xpgir"]
+
+[ext_resource type="AudioStream" uid="uid://beykgb6a04nug" path="res://assets/audio/sfx/wrecker-unreal-tournament.mp3" id="1_0lpns"]
+[ext_resource type="Script" path="res://scenes/managers/unreal_effect_manager.gd" id="1_3vrp0"]
+
+[node name="UnrealEffectManager" type="Node"]
+script = ExtResource("1_3vrp0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_0lpns")
