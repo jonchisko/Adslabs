@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8r0drlc0o4kb"]
 
-[ext_resource type="PackedScene" uid="uid://crycnixymx14k" path="res://scenes/objects/Turret.tscn" id="1_h5t1j"]
-[ext_resource type="PackedScene" uid="uid://cwa2u2xegg4mm" path="res://scenes/objects/Enemy.tscn" id="2_o3emn"]
-[ext_resource type="PackedScene" uid="uid://nj7lobv0joru" path="res://scenes/objects/Walls.tscn" id="3_wkmfb"]
+[ext_resource type="PackedScene" path="res://scenes/objects/Turret.tscn" id="1_h5t1j"]
+[ext_resource type="PackedScene" path="res://scenes/objects/Enemy.tscn" id="2_o3emn"]
+[ext_resource type="PackedScene" path="res://scenes/objects/Walls.tscn" id="3_wkmfb"]
 
 [node name="Adslabs" type="Node2D"]
 position = Vector2(322, 368)
