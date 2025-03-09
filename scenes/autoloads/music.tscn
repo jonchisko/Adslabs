@@ -5,6 +5,7 @@
 [node name="Music" type="Node"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("1_8j5tr")
 autoplay = true
 bus = &"Music"

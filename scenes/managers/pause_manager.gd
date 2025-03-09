@@ -3,6 +3,7 @@ extends Node
 
 var pause_ui_scene: PackedScene = preload("res://scenes/ui/pause_menu.tscn")
 var instantiated: Node
+var _escape_to_close: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,4 +15,3 @@ func _process(delta: float) -> void:
 	if self.instantiated == null and Input.is_action_pressed("pause"):
 		self.instantiated = self.pause_ui_scene.instantiate()
 		self.add_child(self.instantiated)
-		
