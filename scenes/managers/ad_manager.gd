@@ -38,6 +38,8 @@ func _on_ad_closed() -> void:
 
 
 func _on_timer_timeout() -> void:
+	GameEvents.ad_opened.emit()
+	
 	var ad_resource = self.ads[randi_range(0, self.ads.size() - 1)]
 	var ad_instantiated = self._ad_scene.instantiate() as AdUi
 

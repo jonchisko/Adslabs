@@ -73,11 +73,6 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "OPTIONS"
 
-[node name="HowToButton" parent="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_qweqy")]
-layout_mode = 2
-size_flags_vertical = 3
-text = "HOW TO"
-
 [node name="HSeparator" type="HSeparator" parent="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -90,5 +85,4 @@ text = "QUIT"
 
 [connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HowToButton" to="." method="_on_how_to_button_pressed"]
 [connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

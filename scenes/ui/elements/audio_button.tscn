@@ -10,5 +10,6 @@ script = ExtResource("1_fcfww")
 audio_stream = ExtResource("2_3cxvh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
