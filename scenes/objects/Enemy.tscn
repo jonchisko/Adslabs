@@ -11,13 +11,13 @@ height = 78.0
 size = Vector2(48.75, 85)
 
 [node name="Enemy" type="CharacterBody2D"]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.4, 0.4)
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_g2d0e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(95, 96)
+position = Vector2(7.62939e-06, -40)
 texture = ExtResource("1_pvo1e")
 hframes = 6
 vframes = 8
@@ -25,13 +25,16 @@ frame = 26
 region_rect = Rect2(0, 0, 100, 100)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(93, 84)
+position = Vector2(7.62939e-06, -40)
 shape = SubResource("CapsuleShape2D_navxy")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(94.375, 90)
-scale = Vector2(1, 1)
+position = Vector2(4.54747e-13, -42.5)
 shape = SubResource("RectangleShape2D_pv1o1")
 debug_color = Color(0.634818, 0.481551, 0.583804, 0.42)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

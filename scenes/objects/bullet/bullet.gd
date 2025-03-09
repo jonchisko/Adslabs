@@ -22,17 +22,19 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	self._move(delta)
-
+	
 
 func _on_hit_area_area_entered(area: Area2D) -> void:
 	if area == null:
 		return
 	
-	# TODO call kill on area?
-	
-	self.hit_area.set_process(false)
+	$HitArea/CollisionShape2D.set_deferred("disabled", true)
 	self.sprite_2d.visible = false
 	
 	self.audio_stream_player_2d.play()
 	await self.audio_stream_player_2d.finished
+	self.queue_free()
+
+
+func _on_timer_timeout() -> void:
 	self.queue_free()

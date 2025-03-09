@@ -1,12 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bujab6b7amivx"]
+[gd_scene load_steps=5 format=3 uid="uid://bujab6b7amivx"]
 
 [ext_resource type="Script" path="res://scenes/objects/weapon.gd" id="1_4353p"]
+[ext_resource type="AudioStream" uid="uid://cdshk6j0yxb7b" path="res://assets/audio/sfx/Spells/Fireball 1.ogg" id="2_tbua8"]
+[ext_resource type="AudioStream" uid="uid://do6hfty0x2s0y" path="res://assets/audio/sfx/Spells/Fireball 2.ogg" id="3_oms25"]
+[ext_resource type="AudioStream" uid="uid://bpy30ydjosnop" path="res://assets/audio/sfx/Spells/Fireball 3.ogg" id="4_5vl60"]
 
 [node name="Weapon" type="Node2D"]
 script = ExtResource("1_4353p")
+fire_sounds = Array[AudioStream]([ExtResource("2_tbua8"), ExtResource("3_oms25"), ExtResource("4_5vl60")])
 
 [node name="CooldownTimer" type="Timer" parent="."]
-wait_time = 0.3
+wait_time = 0.5
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

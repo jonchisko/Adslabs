@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://747kt0wbg162"]
+
+[ext_resource type="Script" path="res://scenes/managers/end_screen_manager.gd" id="1_6un6h"]
+
+[node name="EndScreenManager" type="Node"]
+script = ExtResource("1_6un6h")

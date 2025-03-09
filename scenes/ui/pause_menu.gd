@@ -8,8 +8,9 @@ func _ready() -> void:
 
 func _on_audio_button_pressed() -> void:
 	# continue
+	print("Pause screen freeing.")
 	self.get_tree().paused = false
-	self.call_deferred("queue_free")
+	self.queue_free()
 
 
 func _on_audio_button_2_pressed() -> void:

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://clx1l8wtj2m20"]
+
+[ext_resource type="Script" path="res://scenes/managers/enemy_manager.gd" id="1_n64i2"]
+
+[node name="EnemyManager" type="Node"]
+script = ExtResource("1_n64i2")
+
+[node name="SpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

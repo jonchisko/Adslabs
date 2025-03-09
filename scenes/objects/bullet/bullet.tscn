@@ -7,10 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://ccnpoddccc1et" path="res://assets/audio/sfx/Spells/Spell Impact 3.ogg" id="4_peuyj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3odnn"]
-radius = 40.1123
+radius = 19.0
 
 [node name="Bullet" type="Node2D"]
-position = Vector2(655, 507)
 script = ExtResource("1_vxhey")
 speed = 670.0
 spell_sounds = Array[AudioStream]([ExtResource("2_cgnoy"), ExtResource("2_8brgr"), ExtResource("4_peuyj")])
@@ -19,6 +18,7 @@ spell_sounds = Array[AudioStream]([ExtResource("2_cgnoy"), ExtResource("2_8brgr"
 stream = ExtResource("2_8brgr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_a3x5y")
 hframes = 9
 frame = 1
@@ -29,4 +29,10 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
 shape = SubResource("CircleShape2D_3odnn")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
 [connection signal="area_entered" from="HitArea" to="." method="_on_hit_area_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

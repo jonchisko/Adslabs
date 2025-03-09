@@ -111,6 +111,7 @@ shadow_offset = Vector2(3, 5)
 [node name="Ad" type="MarginContainer"]
 offset_right = 272.0
 offset_bottom = 133.0
+mouse_filter = 0
 script = ExtResource("1_e3ald")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

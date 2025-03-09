@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=3 uid="uid://cdwghaas0ywyf"]
+
+[ext_resource type="Texture2D" uid="uid://dpir1q86bi07a" path="res://assets/sprites/objects/deco/Tree.png" id="1_c2j5m"]
+[ext_resource type="Script" path="res://scenes/objects/wall.gd" id="1_dr7d7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t45v"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iid53"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cen6c"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(0, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1hg0"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugjs2"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2grln"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk7qi"]
+atlas = ExtResource("1_c2j5m")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_geeb4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t45v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iid53")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cen6c")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1hg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugjs2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2grln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk7qi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4pgj5"]
+size = Vector2(91, 147)
+
+[node name="Wall" type="Node2D"]
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_dr7d7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -82)
+sprite_frames = SubResource("SpriteFrames_geeb4")
+animation = &"death"
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -76)
+shape = SubResource("RectangleShape2D_4pgj5")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

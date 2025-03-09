@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbb3itnf250gi"]
+
+[ext_resource type="PackedScene" uid="uid://clx1l8wtj2m20" path="res://scenes/managers/enemy_manager.tscn" id="1_ara37"]
+
+[node name="EnemySpawnerTest" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="EnemyManager" parent="." node_paths=PackedStringArray("enemy_container") instance=ExtResource("1_ara37")]
+enemy_container = NodePath("../EnemyContainer")
+min_x_position = 300.0
+max_x_position = 800.0
+
+[node name="EnemyContainer" type="Node2D" parent="."]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cekthybqk0a08"]
+
+[ext_resource type="Script" path="res://scenes/ui/elements/life_ui.gd" id="1_qkbt0"]
+
+[node name="LifeUi" type="CanvasLayer"]
+script = ExtResource("1_qkbt0")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(128, 50)
+layout_mode = 2
+theme_type_variation = &"TitleContainerBlue"
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
