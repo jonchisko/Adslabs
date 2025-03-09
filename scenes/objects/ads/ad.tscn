@@ -111,7 +111,6 @@ shadow_offset = Vector2(3, 5)
 [node name="Ad" type="MarginContainer"]
 offset_right = 272.0
 offset_bottom = 133.0
-pivot_offset = Vector2(138, 80)
 script = ExtResource("1_e3ald")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

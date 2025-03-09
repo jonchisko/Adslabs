@@ -3,7 +3,6 @@ class_name AdUi
 
 
 signal ad_closed
-signal ad_final_size
 
 
 @onready var title_label: Label = %TitleLabel
@@ -20,9 +19,6 @@ func set_data(title: String, description: String) -> void:
 func _ready() -> void:
 	self.modulate = Color.TRANSPARENT
 	self.animation_player.play("in")
-	
-	await self.animation_player.animation_finished
-	self.ad_final_size.emit()
 	
 
 func _on_close_button_pressed() -> void:
