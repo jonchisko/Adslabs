@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cckjcncpy262g"]
+
+[ext_resource type="PackedScene" uid="uid://bujab6b7amivx" path="res://scenes/objects/weapon.tscn" id="1_4m7te"]
+
+[node name="WeaponTestScene" type="Node2D"]
+
+[node name="Weapon" parent="." instance=ExtResource("1_4m7te")]
+position = Vector2(436, 423)
